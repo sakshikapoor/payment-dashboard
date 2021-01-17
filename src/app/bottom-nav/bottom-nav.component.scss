@@ -1,0 +1,18 @@
+.bottom-nav-container {
+    height: 56px;
+    display: flex;
+    width: 100%;
+    .nav-icon {
+        width: 20%;
+        color: var(--text-color);
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+.selected {
+    border-top: 2px solid var(--primary-color);
+}
