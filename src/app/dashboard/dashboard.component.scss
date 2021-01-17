@@ -1,0 +1,27 @@
+.top-strip {
+    width: 100%;
+    background-color: var(--primary-dark-color);
+    height: 27px;
+}
+.header-container {
+    background: #00D1C1;
+    padding: 27px 16px;
+    .welcome-container {
+        display: flex;
+        .welcome-text {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    .active-accounts {
+        font-family: var(--font-family-highlighted);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    .cards-container {
+        display: flex;
+    }
+}

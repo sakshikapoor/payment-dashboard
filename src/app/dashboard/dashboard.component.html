@@ -1,0 +1,16 @@
+<div class="top-strip"></div>
+<div class="header-container">
+  <div class="welcome-container">
+    <span class="welcome-text">Welcome to </span>
+    <img src="../../assets/logo-white.svg" />
+  </div>
+  <br />
+  <ng-container>
+    <span class="active-accounts">{{activeAccounts}} Active accounts</span>
+  </ng-container>
+  <br />
+  <div class="cards-container">
+    <app-card [isActionCard]="true" [data]="simplCardData"></app-card>
+    <app-card [isActionCard]="false" [data]="payLaterCardData"></app-card>
+  </div>
+</div>

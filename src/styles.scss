@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+
+    --font-family: 'Roboto', sans-serif;
+    --font-family-highlighted: 'Source Sans Pro', sans-serif;
+    /* App Colors */
+    --primary-color: #00D1C1;
+    --primary-dark-color: #02BAB0;
+    --background--gradient: linear-gradient(90deg, #00D1C1 0%, #00D1DC 100%);
+    --text-color: #888888;
+    --text-color-dark: #000000;
+    --text-color-light: #FFFFFF;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.body-container {
+    margin: 0px !important;
+}
