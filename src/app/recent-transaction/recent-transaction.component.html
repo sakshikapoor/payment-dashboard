@@ -1,0 +1,15 @@
+<div class="card-heading">
+  Recent transactions
+</div>
+
+<div *ngFor="let transaction of recentTransactions" class="border-bottom">
+  <div class="flex-container transactions">
+    <img class="icon" [src]="getIcon(transaction.id)">
+    <div class="details">
+      <span class=" dark-text">{{transaction.vendorName}}</span><br />
+      <span>{{transaction.date}}&nbsp;{{transaction.time}}</span>
+      <span *ngIf="transaction.method.length > 0"> | {{transaction.method}}</span>
+    </div>
+    <div class="dark-text"> &#8377;{{transaction.transactionValue}}</div>
+  </div>
+</div>

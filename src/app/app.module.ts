@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardComponent } from './card/card.component';
 import { BillPaymentComponent } from './bill-payment/bill-payment.component';
 import { VendorsComponent } from './vendors/vendors.component';
+import { RecentTransactionComponent } from './recent-transaction/recent-transaction.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VendorsComponent } from './vendors/vendors.component';
     DashboardComponent,
     CardComponent,
     BillPaymentComponent,
-    VendorsComponent
+    VendorsComponent,
+    RecentTransactionComponent
   ],
   imports: [
     BrowserModule,

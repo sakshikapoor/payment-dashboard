@@ -3,6 +3,8 @@
     width: 70vw;
     max-width: 350px;
     margin-left: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     height: 230px;
     padding: 24px;
@@ -15,11 +17,6 @@
     line-height: 18px;
     height: 26px;
     padding: 4px;
-    padding: 4px;
-}
-.flex-container {
-    display: flex;
-    justify-content: space-between;
 }
 .heading {
     color: var(--text-color);
