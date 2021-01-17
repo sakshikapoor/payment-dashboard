@@ -16,3 +16,12 @@
 .selected {
     border-top: 2px solid var(--primary-color);
 }
+.red-dot {
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    transform: translateX(35px);
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid white;
+}

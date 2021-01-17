@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-bottom-nav',
@@ -10,6 +9,7 @@ import { filter } from 'rxjs/operators';
 export class BottomNavComponent implements OnInit {
   currentURL;
   isHomePage = false;
+  showNotification = true;
 
   constructor(
     private activatedRoute: ActivatedRoute) {
