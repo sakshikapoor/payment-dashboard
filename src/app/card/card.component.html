@@ -1,12 +1,48 @@
 <ng-container *ngIf="isActionCard">
 
-  <div class="card-container">
-    Action card
-  </div>
+	<div class="card-container">
+		<div class="flex-container">
+			<img src="../../assets/logo-original.svg" alt="simpl">
+			<div *ngIf="actionCard.isBillOverdue" class="imp-text"> BILL OVERDUE </div>
+		</div><br />
+		<div class="flex-container">
+			<div class="payment-info">
+				<span class="heading">SPENT TILL NOW</span><br />
+				<span class="bold-text">&#8377;{{actionCard.totalExpenditure}}</span>
+			</div>
+			<div class="due-date">
+				<span class="heading">DUE DATE</span><br />
+				<span>{{actionCard.dueDate}}</span>
+			</div>
+		</div>
+		<button type="button" class="active-btn" *ngIf="actionCard.minAmountDue > 0">
+			<img src="../../assets/lock-white.svg">
+			PAY &#8377;{{actionCard.minAmountDue}}
+		</button>
+		<button type="button" class="inactive-btn" *ngIf="actionCard.minAmountDue === 0">NO AMOUNT DUE</button>
+	</div>
 </ng-container>
 <ng-container *ngIf="!isActionCard">
-
-  <div class="card-container">
-    Info Card
-  </div>
+	<div class="card-container">
+		<img src="../../assets/pay-later.svg"><br />
+		<div class="flex-container">
+			<div>
+				<span class="heading">SPENT THIS MONTH</span><br />
+				<span class="bold-text">&#8377; {{infoCard.amountDue}}</span>
+			</div>
+			<div>
+				<br />
+				<img src="../../assets/help-primary.svg"> <span class="link"> FAQs</span>
+			</div>
+		</div><br />
+		<div class="message-container">
+			<div class="flex-container">
+				<img style="margin: 10px;" src="../../assets/info-dark.svg">
+				<div>
+					{{infoCard.message}}<br />
+					<span class="link">Manage Account</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </ng-container>

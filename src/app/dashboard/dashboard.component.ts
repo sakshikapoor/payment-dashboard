@@ -23,7 +23,7 @@ export class DashboardComponent implements OnInit {
       minAmountDue: 1500,
       dueDate: '15 Aug',
       totalExpenditure: 1800,
-      billOverdue: true,
+      isBillOverdue: true,
     });
 
     this.payLaterCardData.next({

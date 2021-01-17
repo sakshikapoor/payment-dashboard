@@ -1,24 +1,32 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { ActionCardDetails } from '../interfaces/actionCardDetails';
+import { InfoCardDetails } from '../interfaces/infoCardDetails';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+	selector: 'app-card',
+	templateUrl: './card.component.html',
+	styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit, OnChanges {
 
-  @Input() data;
-  @Input() isActionCard;
+	@Input() data;
+	@Input() isActionCard;
 
-  showActionButton = false;
+	actionCard: ActionCardDetails;
+	infoCard: InfoCardDetails;
 
-  constructor() { }
+	showActionButton = false;
 
-  ngOnInit() {
-  }
+	constructor() { }
 
-  ngOnChanges() {
+	ngOnInit() { }
 
-  }
+	ngOnChanges() {
+		if (this.isActionCard) {
+			this.actionCard = this.data.value;
+		} else {
+			this.infoCard = this.data.value;
+		}
+	}
 
 }

@@ -3,7 +3,7 @@
     min-width: 70vw;
     margin: 8px;
     border-radius: 10px;
-    min-height: 212px;
+    height: 230px;
     padding: 24px;
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -12,4 +12,60 @@
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.imp-text {
+    color: #E33F37;
+    border-radius: 2px;
+    background-color: rgba(255, 0, 0, 0.1);
+    font-size: 10px;
+    line-height: 18px;
+    height: 26px;
+    padding: 4px;
+    padding: 4px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.heading {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.bold-text {
+    font-size: larger;
+    font-weight: 600;
+}
+.active-btn {
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: var(--background--gradient);
+    border: 0px;
+    padding: 14px;
+    cursor: pointer;
+}
+.inactive-btn {
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: lightgray;
+    border: 0px;
+    padding: 14px;
+    cursor: not-allowed;
+}
+.link {
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.message-container {
+    font-size: 10px;
+    background-color: #F6F6F6;
+    padding: 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
 }
