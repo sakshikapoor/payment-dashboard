@@ -1,7 +1,8 @@
 <div class="card-heading">
-  You can also use Simpl on
+	You can also use Simpl on
 </div>
 <div class="vendor-container">
-  <div *ngFor="let vendor of allowedVendors">
-  </div>
+	<div *ngFor="let vendor of allowedVendors" class="icon-background">
+		<img src={{vendor.icon}} class="vendor-icon">
+	</div>
 </div>

@@ -5,9 +5,10 @@
 }
 .header-container {
     background: #00D1C1;
-    padding: 27px 16px;
+    padding: 27px 0px;
     .welcome-container {
         display: flex;
+        padding: 0px 16px;
         .welcome-text {
             color: #FFFFFF;
             font-weight: 500;
@@ -20,9 +21,18 @@
         font-weight: 400;
         font-size: 14px;
         color: #FFFFFF;
+        padding: 0px 16px;
     }
-    .cards-container {
+    .scrolling-wrapper {
+        &::-webkit-scrollbar {
+            display: none;
+        }
         display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;        
+    }
+    .card {
+        flex: 0 0 auto;
     }
 }
 .break {

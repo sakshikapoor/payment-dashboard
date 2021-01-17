@@ -1,3 +1,20 @@
 .vendor-container {
-    height: 120px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;        
+}
+.icon-background {
+    margin: 12px;
+    min-width: 56px;
+    height: 56px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+}
+.vendor-icon {
+    max-height: 32px;
+    transform: translateY(12px);
 }
