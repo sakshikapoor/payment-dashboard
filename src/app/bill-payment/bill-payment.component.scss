@@ -1,0 +1,19 @@
+* {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.grid-container {
+        display: inline-grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 25%);
+        box-shadow: 0 3px 5px -5px var(--text-color);
+}
+.heading {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--text-color);
+}
+.grid-item {
+    text-align: center;
+    padding: 10px;
+}

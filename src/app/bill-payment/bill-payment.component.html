@@ -1,0 +1,55 @@
+<div class="heading">
+  Recharges & pay bills
+</div>
+<div class="grid-container">
+  <ng-template ngFor [ngForOf]="allowedBills" let-i="index">
+    <ng-container *ngIf="allowedBills[i] === 'prepaid'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/postpaid.svg"><br />
+        Prepaid
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'electricity'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/electricity.svg"><br />
+        Electricity
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'broadband'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/broadband.svg"><br />
+        Broadband
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'dth'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/dth.svg"><br />
+        DTH
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'gas'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/gas.svg"><br />
+        Gas
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'landline'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/landline.svg"><br />
+        Landline
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'water'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/water.svg"><br />
+        Water
+      </div>
+    </ng-container>
+    <ng-container *ngIf="allowedBills[i] === 'datacard'">
+      <div class="grid-item">
+        <img src="../../assets/bill-types/data-card.svg"><br />
+        Data Card
+      </div>
+    </ng-container>
+  </ng-template>
+</div>
