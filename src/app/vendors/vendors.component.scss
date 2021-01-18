@@ -13,6 +13,10 @@
     text-align: center;
     border-radius: 50%;
     background-color: #F6F6F6;
+    &:hover, &:focus {
+        background-color: #f3f3f3;  
+        cursor: pointer;
+    }
 }
 .vendor-icon {
     max-height: 32px;
